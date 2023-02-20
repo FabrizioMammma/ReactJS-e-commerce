@@ -1,0 +1,12 @@
+.divCartWidget{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25%;
+}
+
+.divCartWidget--span{
+    padding: 5px;
+
+}
