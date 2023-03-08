@@ -1,0 +1,13 @@
+.itemListContainer{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
