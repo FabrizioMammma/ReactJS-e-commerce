@@ -3,6 +3,7 @@ import ItemDetail from '../ItemDetail';
 import myProducts from '../Products/products';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Loader from '../Loader';
 
 
 function ItemDetailContainer() {
@@ -24,24 +25,13 @@ function ItemDetailContainer() {
       getProductDetail.then((respuesta) => setProduct(respuesta));
     }, []);
   
+  
+  if (product.name === undefined) return <Loader/>
+
   return (
-    <ItemDetail product={product} />
+    <ItemDetail product={product}/>
     )
   }
   
   export default ItemDetailContainer;
   
-  // const [product, setProduct] = useState({});
-  //   const { detailId } = useParams();
-  
-  //   useEffect(() => {
-  //     const getProducts = new Promise(resolve => {
-  //       setTimeout(() => {
-  //         resolve(myProducts)
-  //         console.log(myProducts)
-  //       }, 1000);
-  //     });
-  //     getProducts.then(answer => setProduct(answer.filter(productId => productId.id === detailId)))
-  //     console.log(product)
-  //   }, []);
-

@@ -5,8 +5,9 @@ const myProducts = [
         name: 'Nano X2 MEN',
         description: "From pistol squats to burpees, there's no shortage of moves to take your training to the next level.",
         detail: "From pistol squats to burpees, there's no shortage of moves to take your training to the next level.From pistol squats to burpees, there's no shortage of moves to take your training to the next level.",
-        price: '$150',
+        price: 150,
         type: 'shoe',
+        stock: 12,
     },
     {
         id: 2,
@@ -14,8 +15,9 @@ const myProducts = [
         name: 'Nano X2 WOMEN',
         description: "From pistol squats to burpees, there's no shortage of moves to take your training to the next level.",
         detail: "From pistol squats to burpees, there's no shortage of moves to take your training to the next level.From pistol squats to burpees, there's no shortage of moves to take your training to the next level.",
-        price: '$150',
+        price: 150,
         type: 'shoe',
+        stock: 12,
     },
     {
         id: 3,
@@ -23,8 +25,9 @@ const myProducts = [
         name: 'Nano X1 MEN',
         description: "From pistol squats to burpees, there's no shortage of moves to take your training to the next level.",
         detail: "From pistol squats to burpees, there's no shortage of moves to take your training to the next level.From pistol squats to burpees, there's no shortage of moves to take your training to the next level.",
-        price: '$150',
+        price: 150,
         type: 'shoe',
+        stock: 12,
     },
     {
         id: 4,
@@ -32,8 +35,9 @@ const myProducts = [
         name: 'Classic Linear',
         description: "It may look like a common t-shirt. But this men's garment has much more than you expect. The linear logo design gives it a modern Reebok look.",
         detail: "It may look like a common t-shirt. But this men's garment has much more than you expect. The linear logo design gives it a modern Reebok look. You know that t-shirt you've had for years and love because it's super soft? Well that's how good this feels.",
-        price: '$150',
+        price: 150,
         type: 'shirt',
+        stock: 12,
     },
     {
         id: 5,
@@ -41,9 +45,11 @@ const myProducts = [
         name: 'Calleras Training',
         description: "Maximum grip. These grips maximize the feel when gripping the bar with minimal coverage.",
         detail: "Maximum grip. These grips maximize the feel when gripping the bar with minimal coverage. The velcro closure makes them very easy to put on and take off, and to adjust to your size.",
-        price: '$150',
+        price: 150,
         type: 'accesorie',
+        stock: 12,
     },
+    
 ];
 
 export default myProducts;

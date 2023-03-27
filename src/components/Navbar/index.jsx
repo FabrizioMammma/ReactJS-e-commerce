@@ -19,7 +19,7 @@ function NavBar() {
             <NavLink  className='nav-menu-link nav-link' to='/category/accesorie'>Accesories</NavLink>
           </li>
           <li className='nav-menu-item'>
-            <NavLink  className='nav-menu-link nav-link nav-menu-link_active'><CartWidget /></NavLink>
+            <NavLink  className='nav-menu-link nav-link nav-menu-link_active' to='/cart'><CartWidget /></NavLink>
           </li>
         </ul>
       </nav>

@@ -1,14 +1,20 @@
 .cards {
     padding-left: 15px;
     padding-bottom: 15px;
-
 }
+
 
 .card {
     width: 15rem;
 }
 
+
 .card-img-size {
     width: 15rem;
     height: 15rem;
+}
+.card-effect:hover {
+    cursor: pointer;
+    box-shadow: 0px 6px 5px #dedede;
+    transform: translateY(-5px);
 }
