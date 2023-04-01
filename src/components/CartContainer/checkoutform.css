@@ -1,0 +1,25 @@
+.div-container-form {
+    background-color: rgb(161, 159, 159);
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.letters {
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+}
+
+.div-button {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.button-form {
+    padding: 5px 15px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 6px;
+    background-color: #5685a7;
+    color: white;
+    border: 2px solid #ffffff;
+}

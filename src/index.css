@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.div-container{
+  background-image: url('../public/gimnasio-CrossFit.webp');
+  background-position:center;
+  background-size: cover;
+  background-color: rgba(40, 40, 40);
+  background-blend-mode: soft-light;
+  height: calc(100vh - 80px);
+}

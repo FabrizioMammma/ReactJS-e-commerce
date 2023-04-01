@@ -28,7 +28,7 @@ function Counter({ initialValue, stock, addToCart }) {
             <Button onTouch={increaseCount}>
                 +
             </Button>
-            <Button onTouch={() => addToCart(count)}>Agregar al carrito</Button>
+            <Button onTouch={() => addToCart(count)}>Add to cart</Button>
         </div>
 
     )

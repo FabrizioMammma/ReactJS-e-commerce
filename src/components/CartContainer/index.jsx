@@ -1,6 +1,9 @@
 import React from "react";
 import { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import cartContext from "../../Context/cartContext";
+import CheckoutCart from "./CheckOutCart";
+import './cartcontainer.css';
 
 function CartContainer() {
 
@@ -9,50 +12,51 @@ function CartContainer() {
   const total = totalPrice();
 
   if (total === 0) return (
-
-  <div>
-  <h1>Carrito vacio</h1>
-  <button>Comprar</button>
-  </div>
+    <div className="div-container">
+      <h1 className="div-container--h1">Empty cart :(</h1>
+      <NavLink to='/'><button className="div-container--button">Buy</button></NavLink>
+    </div>
   )
 
   return (
     <>
-      <table>
-        <thead>
+    <div className="div-table">
+      <table className="table">
+        <thead className="thead">
           <tr>
-            <th>Photo</th>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Amount</th>
-            <th>Remove</th>
-            <th>Total</th>
+            <th className="th">Photo</th>
+            <th className="th">Product</th>
+            <th className="th">Price</th>
+            <th className="th">Amount</th>
+            <th className="th">Remove</th>
           </tr>
         </thead>
 
-        <tbody>
+        <tbody className="tbody">
           {cart.map((product) => (
-            <tr key={product.id}>
-              <td>
+            <tr className="tr" key={product.id}>
+              <td className="td">
                 <img height={50} src={product.image} alt={product.name} />
               </td>
-              <td>{product.name}</td>
-              <td>{product.price}</td>
-              <td>{product.count}</td>
+              <td className="td">{product.name}</td>
+              <td className="td">${product.price}</td>
+              <td className="td">{product.count}</td>
               <td>
-                <button onClick={ () => removeProduct(product.id) }>Remove</button>
+                <button className="td-button" onClick={() => removeProduct(product.id)}>Remove</button>
               </td>
-              <th>$ --,--</th>
             </tr>
           ))}
         </tbody>
       </table>
-
-      <div>
-        <h4>The total is: $ {totalPrice()}</h4>
       </div>
 
-      <button onClick={clearCart}>Clear cart</button>
+      <div className="div-form">
+        <div className="div-total">
+        <h4 className="total">The total is: $ {totalPrice()}</h4>
+      <button className="td-button" onClick={clearCart}>Clear cart</button>
+      </div>
+      <CheckoutCart cart={cart} total={total}/>
+    </div>
     </>
   );
 }

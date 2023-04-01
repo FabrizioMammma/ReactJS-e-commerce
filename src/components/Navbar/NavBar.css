@@ -1,12 +1,8 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
+
 
 body{
-  padding: 90px 20px 10px;
+  padding: 80px 0px 0px 0px;
 }
-
 
 .header {
   background-color: #06172e;
@@ -34,6 +30,8 @@ body{
   font-weight: bold;
   padding: 0 40px;
   line-height: 80px;
+  font-family: 'Delicious Handrawn', cursive;
+  ;
 }
 
 .nav-menu {
@@ -48,6 +46,7 @@ body{
   line-height: 60px;
   text-transform: uppercase;
   width: max-content;
+  font-family: 'Raleway', sans-serif;
 }
 
 .nav-menu-link {
